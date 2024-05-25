@@ -8,26 +8,16 @@ const Contact = () => {
   const form = useRef();
 
   // Sending Email
-  const sendEmail = (e) => {
-    e.preventDefault();
+const sendEmail = () => {
+    const emailAddress = 'subugksd2002@gmail.com';
+    const subject = 'Regarding for Job Opportunities';
+    const body = 'Hello,'; // Include the message in the body
 
-    emailjs
-      .sendForm(
-      'service_siylix6', 'template_qkprmio', form.current, '4mXDyyvuLnrmd7xB7'
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          // Clear all input field values
-          form.current.reset();
-          // Success toast message
-          toast.success("Email send Successfully");
-        },
-        (error) => {
-          console.log(error.text);
-          toast.error(error.text);
-        }
-      );
+    // Create the mailto URL
+    const mailtoUrl = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}&body=${body}`;
+
+    // Open the user's default email client
+    window.location.href = mailtoUrl;
   };
 
   return (
