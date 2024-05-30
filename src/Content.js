@@ -17,10 +17,11 @@ import services_logo1 from "./assets/images/Services/logo1.png";
 import services_logo2 from "./assets/images/Services/logo2.png";
 import services_logo3 from "./assets/images/Services/logo3.png";
 
-import project1 from "./assets/images/Projects/img1.png";
-import project3 from "./assets/images/Projects/img3.png";
-import project4 from "./assets/images/Projects/img4.png";
-import project5 from "./assets/images/Projects/img5.png";
+import project1 from "./assets/images/projects/img1.png";
+import project3 from "./assets/images/projects/img3.png";
+import project4 from "./assets/images/projects/img4.png";
+import project5 from "./assets/images/projects/img5.png";
+import project6 from "./assets/images/projects/img6.png";
 
 import Hireme_person from "./assets/images/Hireme/person.png";
 import Hireme_person2 from "./assets/images/Hireme/person.png";
@@ -128,24 +129,20 @@ export const content = {
     icon: MdArrowForward,
   },
   services: {
-    title: "Services",
-    subtitle: "WHAT I OFFER",
+    title: "Experiences",
+    subtitle: "WHAT I DID",
     service_content: [
       {
-        title: "Frontend Development",
-        para: "Front-end development encompasses designing and implementing the user interface of websites and web applications",
-        logo: services_logo3,
-      },
-      {
-        title: "Backend Development",
-        para: "Backend development involves creating and managing the server-side logic and databases of websites and applications",
+        title: "Backend Developer Intern",
+        para: "Completed a one-month internship at Naso Tech Pvt Ltd as a Backend Developer.Developed a Video Streaming app backend using Node.js, Express.js, and MongoDB.",
         logo: services_logo2,
       },
       {
-        title: "Fullstack Development",
-        para: "Full-stack development combines both front-end and back-end development, covering the entire spectrum of building web applications from client-side to server-side functionality",
+        title: "Fullstack Developer Intern",
+        para: "Completed a four-month internship at Aristostech Pvt Ltd as a Fullstack Developer.Engineered a robust Job Portal application utilizing React.js and Node.js with MongoDB backend.",
         logo: services_logo1,
       },
+      
     ],
   },
   education: {
@@ -177,6 +174,13 @@ export const content = {
       name: "Job Portal",
       github_link: "https://github.com/SubramaniyanGS/Job-Portal",
       live_link: "",
+    },
+    {
+      img: project6,
+      name: "House Rental App",
+      github_link:
+        "https://github.com/SubramaniyanGS/House-Rental-and-Buying",
+      live_link: "https://myrentifypresidio.netlify.app/",
     },
     {
       img: project4,
