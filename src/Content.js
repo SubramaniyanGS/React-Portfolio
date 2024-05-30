@@ -18,6 +18,7 @@ import services_logo2 from "./assets/images/Services/logo2.png";
 import services_logo3 from "./assets/images/Services/logo3.png";
 
 import project1 from "./assets/images/Projects/img1.png";
+import project2 from "./assets/images/Projects/img2.png";
 import project3 from "./assets/images/Projects/img3.png";
 import project4 from "./assets/images/Projects/img4.png";
 import project5 from "./assets/images/Projects/img5.png";
@@ -191,7 +192,7 @@ export const content = {
     },
    
     {
-      img: project1,
+      img: project2,
       name: "Twitter Sentiment Analysis",
       github_link: "https://github.com/SubramaniyanGS/TwitterSentimentAnalysis",
       live_link: "",
